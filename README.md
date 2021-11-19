@@ -5,14 +5,14 @@ A super simple async shell for Node.js
 You can install this package using NPM.
 
 ```
-npm install async-shell
+npm install @travist/async-shell
 ```
 
 ## Usage
 You can use this library in Node.js within an async/await function.
 
 ```
-const shell = require('async-shell');
+const shell = require('@travist/async-shell');
 
 // Must be within an async function.
 (async () => {
