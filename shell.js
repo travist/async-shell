@@ -6,7 +6,7 @@ const shell = async function (command, directory) {
     let output = '';
     const options = {};
     if (directory) {
-        options.cwd = path.join(__dirname, directory);
+        options.cwd = directory;
     }
     const _eval = spawn('sh', ['-c', command], options);
     _eval.stdout.on('data', (data) => {
