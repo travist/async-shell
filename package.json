@@ -1,6 +1,6 @@
 {
   "name": "@travist/async-shell",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A super simple async shell for Node.js",
   "public": true,
   "main": "shell.js",
