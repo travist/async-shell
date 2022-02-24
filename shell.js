@@ -10,8 +10,9 @@ const shell = async function (command, directory) {
     }
     const _eval = spawn('sh', ['-c', command], options);
     _eval.stdout.on('data', (data) => {
-      console.log(data);
-      output += data;
+      const outputData = data.toString();
+      console.log(outputData);
+      output += outputData;
     });
     _eval.stderr.on('data', (data) => {
       error += data;
